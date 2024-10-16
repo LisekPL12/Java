@@ -3,6 +3,14 @@
  <title> ZABROCKI 3Fgr2 </title>
 
  <script language="JavaScript">
+   function WinOpen_zadanie1() 
+ {
+window.open("zadanie1_zabr.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+  function WinOpen_zadanie2() 
+ {
+window.open("zadanie2_zabr.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
  function WinOpen_zadanie3() 
  {
 window.open("zadanie3_zabr.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
@@ -20,6 +28,7 @@ function okno_zamknij()
 <body>
  <a style="color:Red" font-size:"2cm" > Szkielet zaliczeniowy JavaScript Bartosz Zabrocki Klasa 3Fgr2 </a>
  <form>
+ <input type="button_z2" name="zadanie2" value="zadanie2 Zabrocki" onclick="WinOpen_zadanie2(' ')">
  <input type="button_z3" name="zadanie3" value="zadanie3 Zabrocki" onclick="WinOpen_zadanie3(' ')">
  <input type="button_z4" name="zadanie4" value="zadanie4 Zabrocki" onclick="WinOpen_zadanie4(' ')">
  <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>

@@ -22,23 +22,15 @@ window.open("grafika4.html","okienko","toolbar=no,directories=no,menubar=no,heig
  }
 
 
-
-
-   
-function okno_zamknij() 
- {
- window.close()
- }
  </script>
  </head>
 <body>
+ 
    <a style="color:Red" font-size:"2cm" > Wykonał: Bartosz Zabrocki mój numer w dzieniku 33, czyli układ 1 </a>
- <form>
-<input type="button" name="grafika 1" value="grafika 1" onclick="WinOpen_grafika1(' ')">
-<input type="button" name="grafika 2" value="grafika 2" onclick="WinOpen_grafika2(' ')">
-<input type="button" name="grafika 3" value="grafika 3" onclick="WinOpen_grafika3(' ')">
-<input type="button" name="grafika 4" value="grafika 4" onclick="WinOpen_grafika4(' ')">
- <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
- </form>
+ 
+    <button onclick="WinOpen_grafika1()">Grafika 1</button>
+    <button onclick="WinOpen_grafika2()">Grafika 2</button>
+    <button onclick="WinOpen_grafika3()">Grafika 3</button>
+    <button onclick="WinOpen_grafika4()">Grafika 4</button>
 </body>
 </html>

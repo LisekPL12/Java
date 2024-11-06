@@ -5,30 +5,34 @@
  {
  window.close()
  }
+21
  </script>
 </head>
 <body>
  <form>
- <textarea name="zadanie 13 KOD" cols="80" rows="22" readonly>
+ <textarea name="zadanie 11 KOD" cols="80" rows="22" readonly>
   
 <!DOCTYPE html> 
  <head> 
- <title> Zabrocki 3F </title> 
+ <title> ZABROCKI 3F </title> 
  <meta charset="utf-8"> 
  </head> 
 <body>
-<div style="color:rgb(7, 82, 95);font-size:100px;">
+<div id="result" style="color:green;font-size:33px;">
  <script language="JavaScript">
+var D1_Zabr=prompt("Data nr 1","");
+var D2_Zabr=prompt("Data nr 2","");
+   
+var D1=parseFloat(D1_Zabr);
+var D2=parseFloat(D2_Zabr);
 
- var liczba1=prompt("liczba1=","");
- var m_zabr=parseFloat(liczba1);
- 
- document.write("1/"+m_zabr+"=" );
- document.write("1/"+(1+m_zabr)+ "+");
- document.write("1/"+(m_zabr* (m_zabr+1))+ "<br>");
+var iloscsekund = (D1-D2) * 24 * 60 * 60;
+  
+document.getElementById("result").innerHTML = "Ilość sekund" + iloscSekund+ "sekund" ;
  </script>
 </div>
-
+</body>
+</html>
   
  </textarea>
 </form>
@@ -37,5 +41,3 @@
 </script>
 </body>
 </html
-
-

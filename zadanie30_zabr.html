@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 30</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .concept {
+            margin-bottom: 20px;
+        }
+        .concept p {
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+  <!-- Bartosz Zabrocki 3Fgr2 -->
+    <script>
+        class Concept {
+            constructor(name, description) {
+                this.name = name;
+                this.description = description;
+            }
+
+            display() {
+                return `<h2>${this.name}</h2><p>${this.description}</p>`;
+            }
+        }
+
+        const concepts = [
+            new Concept('Klasa', 'Klasa to szablon lub plan, który definiuje strukturę i zachowanie obiektów. Zawiera właściwości (dane) oraz metody (funkcje), które określają, co obiekt może robić.'),
+            new Concept('Obiekt', 'Obiekt to instancja klasy, która reprezentuje konkretny element lub jednostkę. Obiekty zawierają stan (właściwości) i zachowanie (metody) zdefiniowane przez klasę.'),
+            new Concept('Właściwość (Atrybut)', 'Właściwość to zmienna zdefiniowana w klasie, która przechowuje dane związane z obiektem. Właściwości opisują cechy obiektu, takie jak kolor, rozmiar, czy imię.'),
+            new Concept('Metoda', 'Metoda to funkcja zdefiniowana w klasie, która określa zachowanie obiektu. Metody operują na właściwościach obiektu i mogą wykonywać różne operacje.'),
+            new Concept('Konstruktor', 'Konstruktor to specjalna metoda w klasie, która jest wywoływana podczas tworzenia nowego obiektu. Konstruktor inicjuje właściwości obiektu i wykonuje początkowe ustawienia.'),
+            new Concept('Dziedziczenie', 'Dziedziczenie to mechanizm, który pozwala na tworzenie nowej klasy na podstawie istniejącej klasy. Nowa klasa (klasa pochodna) dziedziczy właściwości i metody klasy bazowej, a także może dodawać własne.'),
+            new Concept('Hermetyzacja (Enkapsulacja)', 'Hermetyzacja to zasada ukrywania wewnętrznych szczegółów implementacji obiektu i udostępniania tylko niezbędnych interfejsów. Chroni dane obiektu i kontroluje dostęp do nich.'),
+            new Concept('Polimorfizm', 'Polimorfizm to zdolność obiektów do przyjmowania różnych form. Dzięki polimorfizmowi różne klasy mogą definiować metody o tej samej nazwie, ale o różnym działaniu. Umożliwia to elastyczne i dynamiczne wywoływanie metod.')
+        ];
+
+        function displayConcepts() {
+            const conceptsDiv = document.getElementById('concepts');
+            concepts.forEach(concept => {
+                const conceptHTML = concept.display();
+                conceptsDiv.innerHTML += `<div class="concept">${conceptHTML}</div>`;
+            });
+        }
+    </script>
+</head>
+<body>
+  <!-- Bartosz Zabrocki 3Fgr2 -->
+    <h1>Podstawowe pojęcia w programowaniu obiektowym</h1>
+    <button class="btn" onclick="displayConcepts()">Wyświetl pojęcia</button>
+    <div id="concepts"></div>
+</body>
+</html>

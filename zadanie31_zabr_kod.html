@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programowanie Obiektowe</title>
+    <title>zadanie 31</title>
     <script type="text/javascript">
         var wiezowiec = {
             nazwa: 'Sky Tower',
@@ -26,7 +26,19 @@
                 );
             }
         };
+
+        
+        wiezowiec.architekt = 'Bartosz Zabrocki';
+
+
+        wiezowiec.wiezowiec_pokaz_zabrocki = function() {
+            document.write(
+                'Architekt: ' + this.architekt
+            );
+        };
+
         wiezowiec.pokaz();
+        wiezowiec.wiezowiec_pokaz_zabrocki();
     </script>
 </head>
 <body>
@@ -38,10 +50,11 @@
     Wysokość<br>
     Liczba pięter<br>
     Lokalizacja<br>
+    Nowe pole: Architekt<br>
     Metoda: pokaz<br>
+    Nowa metoda: wiezowiec_pokaz_kowalski<br>
 </body>
 </html>
-
 		</textarea>
 	</body>
 </html>	

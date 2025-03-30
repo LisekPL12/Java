@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Kod zadanie 39 Zabrocki</h1>
+		<textarea style="width: 98%; height: 500px;">
+            <!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie39 Bartosz Zabrocki 3F </title>
+  <style>
+    pre.menu {
+      color: green;
+      font-size: 30px;
+    }
+    pre.czerwony {
+    color: red;
+    font-size: 20px;
+    }
+    pre.niebieski {
+    color: blue;
+    font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <pre class="menu">
+    MENU:
+    </pre>
+    <pre class="czerwony">
+    Czerwony = 1
+    </pre>
+    <pre class="niebieski">
+    Niebieski = 2
+    </pre>
+
+
+  <input type="button" name="Zabrocki" value="Oblicz" onclick="fun_zabr()">
+  <script>
+    function fun_zabr() {
+      var x = prompt("Podaj kolor", "");
+      x = x.toLowerCase();
+      if (x === "1" || x === "czerwony") {
+        document.write("<h1><font color='red' size='7'>wczytałeś kolor czerwony</font></h1>");
+      }
+      else if (x === "2" || x === "niebieski") {
+        document.write("<h1><font color='blue' size='1'>wczytałeś kolor niebieski</font></h1>");
+      }
+      else {
+        document.write("<h1><font color='green'>wczytałeś kolor " + x + "</font></h1>");
+      }
+    }
+  </script>
+</body>
+</html>
+
+            
+		</textarea>
+	</body>
+</html>	

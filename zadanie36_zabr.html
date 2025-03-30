@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 36 Bartosz Zabrocki 3F</title>
+    <style>
+        .parzysta {
+            color: rgb(223, 37, 37);
+            font-size: 3em;
+        }
+        .nieparzysta {
+            color: rgb(190, 193, 196);
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bartosz Zabrocki 3F gr2 -->
+    <h1>Sprawdzanie parzystości liczby</h1>
+    <input type="number" id="liczba" placeholder="Podaj liczbę">
+    <button onclick="sprawdzParzystosc()">Sprawdź</button>
+    <p id="wynik"></p>
+
+    <script>
+        function sprawdzParzystosc() {
+            const liczba = document.getElementById('liczba').value;
+            const wynikElement = document.getElementById('wynik');
+
+            if (liczba % 2 === 0) {
+                wynikElement.textContent = 'Liczba jest parzysta';
+                wynikElement.className = 'parzysta';
+            } else {
+                wynikElement.textContent = 'Liczba jest nieparzysta';
+                wynikElement.className = 'nieparzysta';
+            }
+        }
+    </script>
+</body>
+</html>

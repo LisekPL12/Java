@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Kod zadanie 37 Zabrocki</h1>
+		<textarea style="width: 98%; height: 500px;">
+            <!DOCTYPE html>
+            <html lang="pl">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Zadanie 37 Bartosz Zabrocki 3F</title>
+                <style>
+                    .brawo {
+                        color: blue;
+                        font-size: 4em;
+                    }
+                    .zle {
+                        color: red;
+                        font-size: 7em;
+                    }
+                </style>
+            </head>
+            <body>
+                <!-- Bartosz Zabrocki 3Fgr2 -->
+                <h1>Sprawdź swoją wiedzę o JavaScript</h1>
+                <p>Od którego roku JavaScript jest w użyciu?</p>
+                <input type="number" id="rok_zabr" placeholder="Podaj rok">
+                <button onclick="sprawdzWiedze()">Sprawdź</button>
+                <p id="wynik"></p>
+            
+                <script>
+                    function sprawdzWiedze() {
+                        const rok_zabr = document.getElementById('rok_zabr').value;
+                        const wynikElement = document.getElementById('wynik');
+            
+                        if (rok_zabr == 1995) {
+                            wynikElement.textContent = 'Brawo, znasz rok, od kiedy działa JavaScript!';
+                            wynikElement.className = 'brawo';
+                        } else {
+                            wynikElement.textContent = 'Źle, musisz jeszcze poczytać!';
+                            wynikElement.className = 'zle';
+                        }
+                    }
+                </script>
+            </body>
+            </html>
+            
+		</textarea>
+	</body>
+</html>	

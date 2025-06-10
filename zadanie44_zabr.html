@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 44</title>
+    <style>
+        #text {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="text">Bartosz</div>
+
+    <script>
+        let nazwisko = "Zabrocki"; 
+        let imie = "Bartosz"; 
+
+        let liczbaLiterNazwiska = nazwisko.length;
+        let ileRazyWyswietlic = (liczbaLiterNazwiska % 4) + 10;
+        let wielkoscLiter = (liczbaLiterNazwiska % 3) + 40;
+
+        let textElement = document.getElementById("text");
+        let counter = 0;
+
+        function zmienTekst() {
+            if (counter % 2 === 0) {
+                textElement.innerHTML = imie;
+            } else {
+                textElement.innerHTML = nazwisko;
+            }
+            textElement.style.fontSize = wielkoscLiter + "px";
+            counter++;
+
+            if (counter < ileRazyWyswietlic) {
+                setTimeout(zmienTekst, 1000); 
+            }
+        }
+
+        setTimeout(zmienTekst, 1000);
+    </script>
+
+</body>
+</html>

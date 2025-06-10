@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <textarea name="zabrocki" cols="120" rows="29" readonly>
+            <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie 43</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wprowadzanie danych i iteracja</h1>
+
+    <script>
+        let i_zabr = 0; 
+        let koniec_petli_zabr = prompt("Podaj wartość końcową dla pętli:");
+
+        for (i_zabr; i_zabr < koniec_petli_zabr; i_zabr++) {
+            console.log("Iteracja nr: " + i_zabr);
+        }
+
+        alert("Pętla zakończona! Sprawdź konsolę (F12 -> Console) dla wyników.");
+    </script>
+</body>
+</html>
+
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 52</title>
+</head>
+<body>
+    <script>
+        var a_zabr = (7 % 4) + 5;
+        var b_zabr = (6 % 6) + 20;
+        for (var i_zabr = 0; i_zabr < b_zabr; i_zabr++) {
+            document.write("*");
+        }
+        document.write("<br>");
+        for (var i_zabr = 0; i_zabr < a_zabr - 2; i_zabr++) {
+            document.write("*");
+            for (var j_zabr = 0; j_zabr < b_zabr - 2; j_zabr++) {
+            document.write("&nbsp;");
+            }
+            document.write("*<br>");
+        }
+        for (var i_zabr = 0; i_zabr < b_zabr; i_zabr++) {
+            document.write("*");
+        }
+        </script>
+    </body>
+    </html>

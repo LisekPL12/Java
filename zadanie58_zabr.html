@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 58_zabr</title>
+</head>
+<body>
+<script>
+    var liczba1_zabr = parseInt(prompt("Podaj pierwszą liczbę (_zabr):"));
+    var liczba2_zabr = parseInt(prompt("Podaj drugą liczbę (_zabr):"));
+
+    if (liczba1_zabr === liczba2_zabr) {
+        confirm("Liczby są równe (_zabr). Brak obliczeń.");
+    } else if (liczba1_zabr < liczba2_zabr) {
+        for (var i_zabr = liczba1_zabr + 1; i_zabr < liczba2_zabr; i_zabr++) {
+            if (i_zabr % 2 !== 0) {
+                document.write(`<span style="color:green; font-size:24px;">${i_zabr} </span>`);
+            }
+        }
+    } else {
+        for (var i_zabr = liczba1_zabr - 1; i_zabr > liczba2_zabr; i_zabr--) {
+            if (i_zabr % 2 !== 0) {
+                document.write(`<span style="color:blue; font-size:12px;">${i_zabr} </span>`);
+            }
+        }
+    }
+</script>
+</body>
+</html>

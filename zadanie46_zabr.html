@@ -1,0 +1,26 @@
+<!DOCTYPE html>   
+<head>    
+<title>zadanie 46</title>    
+<meta charset="utf-8">   
+</head>  
+    <body> 
+        <div style="color:red;font-size:50px;"> 
+        <script language="JavaScript"> 
+        var h_zabr;
+        do { 
+            var liczba1 = prompt("wysokość=", ""); 
+            h_zabr = parseFloat(liczba1); 
+        } while (!(h_zabr > 0)); 
+
+        var a_zabr;
+        do { 
+            var liczba2 = prompt("podstawę=", ""); 
+            a_zabr = parseFloat(liczba2); 
+        } while (!(a_zabr > 0)); 
+
+        var Pole = a_zabr * h_zabr / 2; 
+        document.write("Pole=" + Pole.toFixed(2) + " cm^2" + "<br>"); 
+        </script> 
+        </div> 
+    </body> 
+</html> 

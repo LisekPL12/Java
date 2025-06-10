@@ -1,0 +1,54 @@
+
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <textarea name="zabrocki" cols="120" rows="29" readonly>
+            <!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47</title>
+</head>
+
+<body>
+    <h2>Sprawdzenie poprawności boków trójkąta</h2>
+    <button onclick="wpisz()">Wprowadź boki trójkąta</button>
+    <p id="wynik"></p>
+
+    <script>
+        function wpisz() {
+            let a_zabr, b_zabr, c_zabr;
+            do {
+            a_zabr = parseFloat(prompt("Podaj bok a:"));
+            b_zabr = parseFloat(prompt("Podaj bok b:"));
+            c_zabr = parseFloat(prompt("Podaj bok c:"));
+            } while (
+            isNaN(a_zabr) || isNaN(b_zabr) || isNaN(c_zabr) ||
+            a_zabr <= 0 || b_zabr <= 0 || c_zabr <= 0 || (a_zabr + b_zabr <= c_zabr) || (a_zabr + c_zabr <= b_zabr) || (b_zabr + c_zabr <= a_zabr)
+            );
+
+            document.getElementById("wynik").innerText =
+            "Boki tworzą poprawny trójkąt: a=" + a_zabr + ", b=" + b_zabr + ", c=" + c_zabr;
+        }
+    </script>
+</body>
+
+</html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <textarea name="zabrocki" cols="120" rows="29" readonly>
+            <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 45</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        p {
+            font-size: 33px;
+        }
+        .tekst {
+            font-size: 33px;
+        }
+    </style>
+</head>
+<body>
+    <p> Wielkość tekstu to 33px </p>
+    <p id="licznik">Ilość wykonania pętli = 0</p>
+    <div class="tekst" id="output"></div>
+
+    <script>
+        let licznik_petli = 0;
+        let counter = 0;
+        let imie = "Bartosz";
+        let nazwisko = "Zabrocki";
+        let outputElement = document.getElementById("output");
+        let licznikElement = document.getElementById("licznik");
+
+        function zmienTekst() {
+            if (counter % 2 === 0) {
+                outputElement.innerHTML = imie;
+            } else {
+                outputElement.innerHTML = nazwisko;
+            }
+            outputElement.style.fontSize = "33px";
+            counter++;
+            if (counter % 2 === 0) {
+                licznik_petli++;
+                licznikElement.innerText = "Ilość wykonania pętli = " + licznik_petli;
+            }
+        }
+
+        setInterval(zmienTekst, 1000);
+    </script>
+</body>
+</html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
